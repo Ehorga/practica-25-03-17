@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
@@ -29,11 +32,17 @@ label,
   display: block;
   margin: 10px 0;
 }
-
-input,
+label>span,
+.group>span{
+  width: 30%;
+  display: inline-block;
+  text-align: right;
+  padding-right: 15px;
+}
+.form>label>input,
 select,
 textarea {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   margin-top: 5px;
   border: 1px solid #ccc;
@@ -45,12 +54,16 @@ textarea {
 }
 
 .group-radio {
-  display: flex;
-  align-items: center;
-}
+  display: inline-block;
+  width: 50%;
 
+}
+.group-radio>label{
+  display: inline-block;
+  width: 45%;
+}
 button {
-  width: 100%;
+  margin-left: 31%;
   background: #007bff;
   color: white;
   padding: 10px;
